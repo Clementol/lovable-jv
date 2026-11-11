@@ -1,0 +1,14 @@
+### Payment Checkout
+POST http://localhost:8080/api/payments/checkout
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjbGVtQGdtYWlsLmNvbSIsInVzZXJJZCI6IjIiLCJpYXQiOjE3NzI3OTg0OTQsImV4cCI6MTc3Mjc5OTA5NH0.oCvEhOirrQN5BUzPndYCtbN96UOTafhpITqQj1YanPE
+Content-Type: application/json
+
+{
+  "planId": 1
+}
+
+
+### Open portal
+POST http://localhost:8080/api/payments/portal
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjbGVtQGdtYWlsLmNvbSIsInVzZXJJZCI6IjIiLCJpYXQiOjE3NzI4ODkwMTMsImV4cCI6MTc3Mjg4OTYxM30.e0pMnRFjCpM8JJFJbRFpd7zQJRAzPomEP_V9tkkSHcE
+Content-Type: application/json

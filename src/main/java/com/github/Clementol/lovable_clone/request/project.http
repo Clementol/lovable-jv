@@ -1,0 +1,60 @@
+
+### CREATE NEW PROJECT
+POST http://localhost:8080/api/projects
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjbGVtQGdtYWlsLmNvbSIsInVzZXJJZCI6IjIiLCJpYXQiOjE3NzAyMTcyNDMsImV4cCI6MTc3MDIxNzg0M30.2Ww3dhQz3KbMDFbmGdyxbsBnu-kVLeqwAJhMFIEal7A
+
+{
+    "name": "Project 11"
+}
+
+### GET PROJECTS BY OWNER
+GET http://localhost:8080/api/projects
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjbGVtQGdtYWlsLmNvbSIsInVzZXJJZCI6IjIiLCJpYXQiOjE3ODgwMTc1NjksImV4cCI6MTc4ODAyNDc2OX0.-F6qBEVTTfQl8qvB-5YHqxTVr6ZJJVi-EiSLrBu_HsM
+Content-Type: application/json
+
+### GET PROJECT BY ID
+GET http://localhost:8080/api/projects/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjbGVtQGdtYWlsLmNvbSIsInVzZXJJZCI6IjIiLCJpYXQiOjE3NzA4ODQ3NDksImV4cCI6MTc3MDg4NTM0OX0.Ve2IF0lOBKijuS-nAlEYxWHkchstRQZOzmJ774a8EYU
+Content-Type: application/json
+
+### UPDATE PROJECT BY ID
+PATCH http://localhost:8080/api/projects/1
+Content-Type: application/json
+
+{
+  "name": "My Project 1"
+}
+
+### DELETE PROJECT BY ID
+DELETE http://localhost:8080/api/projects/2
+Content-Type: application/json
+
+### GET PROJECT MEMBER BY OWNER
+GET http://localhost:8080/api/projects/1/members
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjbGVtMkBnbWFpbC5jb20iLCJ1c2VySWQiOiIzIiwiaWF0IjoxNzcwODg5NDEyLCJleHAiOjE3NzA4OTAwMTJ9.2Y27c0gKBHoFHVm6R7Jgczy1u5NuhL7CFHiwoe5WhHw
+
+
+### INVITE PROJECT MEMBER
+POST http://localhost:8080/api/projects/1/members
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjbGVtQGdtYWlsLmNvbSIsInVzZXJJZCI6IjIiLCJpYXQiOjE3NzA4ODg5ODAsImV4cCI6MTc3MDg4OTU4MH0.5bXwiTa7oSPV-FRPGJ-MQtIA29LXudi6sEIc1BTBjOQ
+
+
+{
+  "username": "clem2@gmail.com",
+  "role": "VIEWER"
+}
+
+### UPDATE PROJECT MEMBER ROLE
+PATCH http://localhost:8080/api/projects/1/members/2
+Content-Type: application/json
+
+{
+  "role": "VIEWER"
+}
+
+### REMOVE PROJECT MEMBER
+DELETE http://localhost:8080/api/projects/1/members/2
+Content-Type: application/json

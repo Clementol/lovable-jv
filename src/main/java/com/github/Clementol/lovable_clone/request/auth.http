@@ -1,0 +1,19 @@
+
+### SIGN UP
+POST http://localhost:8080/api/auth/signup
+Content-Type: application/json
+
+{
+    "name": "Clem",
+    "username": "clem@gmail.com",
+    "password": "pass123"
+}
+
+### SIGN IN
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "clem@gmail.com",
+    "password": "pass123"
+}
