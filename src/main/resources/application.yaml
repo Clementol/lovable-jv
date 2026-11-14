@@ -54,4 +54,3 @@ minio:
   access-key: ${MINIO_ACCESS_KEY}
   secret-key: ${MINIO_SECRET_KEY}
   project-bucket: projects
-
